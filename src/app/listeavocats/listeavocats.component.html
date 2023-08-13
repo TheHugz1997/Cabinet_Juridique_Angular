@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Add Bootstrap CSS link here -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="bg-image">
+        <div class="container text-center">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <p class="title">
+                {{ title }}
+            </p>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <div class="row min-vh-100">
+              <div class="col-md-4" *ngFor="let avocat of avocats; let i = index">
+                  <button type="button" class="btn btn-outline-primary custom-btn">
+                    {{ avocat.id_avocat }}
+                    {{ avocat.nom_avocat }}
+                  </button>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

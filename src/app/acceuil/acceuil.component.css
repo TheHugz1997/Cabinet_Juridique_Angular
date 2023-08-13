@@ -1,0 +1,54 @@
+.bg-image {
+    background-image: url('../../assets/images/palais_de_justice.jpg');
+    height: max-content;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div[ng-view]{
+    height: 100%;
+}
+
+.btn-warning {
+    font-family: Raleway-SemiBold;
+    font-size: 100px;
+    color: rgba(240, 173, 78, 0.75);
+    letter-spacing: 5px;
+    line-height: 200px;
+    border: 2px solid rgba(240, 173, 78, 0.75);
+    border-radius: 80px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+    margin-right: 100px;
+}
+  
+.btn-warning:hover {
+    color: #FFF;
+    background: rgb(240, 173, 78, 0.75);
+    border: 2px solid rgba(240, 173, 78, 0.75);
+}
+
+.btn-simple {
+    font-family: Raleway-SemiBold;
+    font-size: 200px; /* Adjust font size */
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 1px;
+    line-height: 200px; /* Adjust line height */
+    border: 2px solid rgba(240, 173, 78, 0.75);
+    border-radius: 40px;
+    background:rgba(240, 173, 78, 0.75);
+    transition: all 0.3s ease 0s;
+    margin-right: 20px; /* Adjust margin-right */
+    height: 200px; /* Set a fixed height */
+}
+
+.btn-simple:hover {
+    color: #FFF;
+    background: rgba(240, 173, 78, 0.75);
+    border: 2px solid rgba(240, 173, 78, 0.75);
+}
+
+
+  

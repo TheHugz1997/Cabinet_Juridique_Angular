@@ -1,0 +1,38 @@
+.bg-image {
+    background-image: url('../../assets/images/palais_de_justice.jpg');
+    height:max-content;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div[ng-view]{
+    height: 100%;
+}
+
+.title {
+    font-size: 200px;
+    text-align: center;
+    padding: 30px;
+    background-color:beige;
+}
+
+.test {
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+.custom-btn {
+    font-size: 24px; /* Increase font size */
+    padding: 15px 30px; /* Adjust padding for button size */
+  }
