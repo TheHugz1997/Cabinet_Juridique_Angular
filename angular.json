@@ -64,7 +64,8 @@
               "browserTarget": "cabinet_juridique:build:production"
             },
             "development": {
-              "browserTarget": "cabinet_juridique:build:development"
+              "browserTarget": "cabinet_juridique:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

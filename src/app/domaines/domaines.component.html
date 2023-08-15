@@ -1,0 +1,16 @@
+
+<div class="row itemsBlock">
+    <div *ngFor="let domaine of domaines" class="col-md-4 col-sm-6 col-12">
+        <div class="card">
+            <div class="card-header">
+                {{domaine.nom_domaine}}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{domaine.nom_domaine}}</h5>
+                <p class="card-text">{{domaine.description}}</p>
+                <a routerLink="/listeavocats/{{domaine.id_domaine}}" class="btn btn-primary">Liste des avocats</a>
+                <a class="btn btn-danger" (click)="deleteDomaine(domaine.id_domaine)" *ngIf="isUserAdmin()">Suppression</a>
+            </div>
+        </div>
+    </div>
+</div>

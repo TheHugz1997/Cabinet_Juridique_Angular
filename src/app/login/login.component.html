@@ -1,0 +1,14 @@
+<div class="card">
+<form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm.value)">
+    <h3> Veuillez compléter les champs suivants </h3>
+    <div class="mb-3">
+      <label for="mail_utilisateur" class="form-label">Mail utilisateur</label>
+      <input type="email" class="form-control" id="mail_utilisateur" name="mail_utilisateur" ngModel>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
+      <input type="password" class="form-control" id="mot_de_passe" name="mot_de_passe" ngModel>
+    </div>
+    <button type="submit" class="btn btn-primary">Connexion</button>
+  </form>
+</div>

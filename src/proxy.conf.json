@@ -1,0 +1,13 @@
+{
+    "/api": {
+        "target": "http://pat.infolab.ecam.be:60838",
+        "secure": false,
+        "pathRewrite": {
+            "^/api": ""
+        },
+        "changeOrigin": true
+    }
+}
+
+
+

@@ -1,34 +1,17 @@
-<!doctype html>
-<html>
-<head>
-  <link rel="stylesheet" href="./acceuil.component.css">
-</head>
-<div class="bg-image">
-  <nav class="navbar navbar-expand-lg navbar-light bg-secondary py-5">
-    <div class="container-fluid">
-        <button type="button" class="btn btn-warning"> {{title}}</button>
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <button type="button" class="btn btn-warning"> Login </button>
-                  <button type="button" class="btn btn-warning"> Sign up </button>
-                </li>
-            </ul>
-        </div>
+<div class="card text-center center">
+    <div class="card-header">
+        <h1>Cabinet Juridique</h1>
+        <p>Découvrez notre plateforme de gestion juridique, votre guichet unique pour toutes vos questions juridiques.
+        </p>
+        <p>Explorez une gamme complète de domaines spécialisés et parcourez notre liste soigneusement sélectionnée
+            d'avocats expérimentés.</p>
+        <p>Que vous ayez besoin de conseils ponctuels ou d'une représentation continue, notre interface conviviale vous
+            permet de trouver l'expert juridique idéal pour répondre à vos besoins spécifiques.</p>
+        <p>Simplifiez votre expérience juridique avec nous dès aujourd'hui.</p>
+        <a class="btn btn-primary" routerLink="/domaines">Domaines</a> &nbsp; <a class="btn btn-primary" routerLink="/listeavocats">Avocats</a>
+
     </div>
-  </nav>
-  <div class="container-fluid">
-    <div class="row min-vh-100">
-      <div class="col d-flex justify-content-center align-items-center">
-        <a type="button" class="btn btn-simple half-height-button opacity-75">Domaines</a>
-      </div>
-      <div class="col d-flex justify-content-center align-items-center">
-        <a type="button" routerLink="/listeavocats" class="btn btn-simple half-height-button opacity-75"> Avocats </a>
-      </div>
+    <div class="card-body">
+        <img src="../../assets/images/palais_de_justice.jpg" class="card-img-top" alt="palais-de-justice" style="width: 75%;">
     </div>
-  </div>  
 </div>
-<router-outlet name="content"></router-outlet>
-</html>

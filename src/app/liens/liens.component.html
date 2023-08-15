@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card centertext">
+      <div class="card-body">
+        <h5>Avocats</h5>
+        <ul class="list-group">
+          <a class="list-group-item list-group-item-action cursor-hand" *ngFor="let avocat of avocats; let i = index"
+            [ngClass]="{'active' : avocat.id_avocat == currentAvocat?.id_avocat}" (click)="selectAvocatByIndex(i)">
+            {{avocat.nom_avocat}}
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card centertext">
+      <div class="card-body">
+        <h5>Domaines</h5>
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let domaine of allDomaines; let i = index">
+            <input class="form-check-input me-1" type="checkbox" value="1" id="{{i}}" [checked]="shouldCheckDomain(domaine)" (change)="toggle(domaine, $event, i)">
+            <label class="form-check-label stretched-link" for="{{i}}">{{domaine.nom_domaine}}</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="card">
+    <form #registerForm="ngForm" (ngSubmit)="onRegister(registerForm.value)">
+        <h3> Veuillez compléter les champs suivants </h3>
+        <div class="mb-3">
+            <label for="nom_utilisateur" class="form-label">Nom utilisateur</label>
+            <input type="text" class="form-control" id="nom_utilisateur" name="nom_utilisateur" ngModel>
+        </div>
+        <div class="mb-3">
+          <label for="mail_utilisateur" class="form-label">Mail utilisateur</label>
+          <input type="email" class="form-control" id="mail_utilisateur" name="mail_utilisateur" ngModel>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="mot_de_passe" name="mot_de_passe" ngModel>
+        </div>
+        <div class="mb-3">
+            <label for="telephone" class="form-label">Telephone</label>
+            <input type="tel" class="form-control" placeholder="0471659832"  id="telephone" name="telephone" ngModel>
+        </div>
+        <button type="submit" class="btn btn-primary">Inscription</button>
+    </form>
+</div>

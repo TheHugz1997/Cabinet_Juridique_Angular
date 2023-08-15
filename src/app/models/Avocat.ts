@@ -1,3 +1,5 @@
+import { Domaine } from "./Domaine";
+
 export class Avocat {
 
     id_avocat?: number;
@@ -5,5 +7,5 @@ export class Avocat {
     coordonnees?: string;
     honoraires?: number;
     photo?: string;
-    
+    Domaines?: Domaine[]
 }

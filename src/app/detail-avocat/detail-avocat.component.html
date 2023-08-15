@@ -1,0 +1,21 @@
+<div class="card text-center" *ngIf="avocat">
+    <div class="card-header">
+        Details avocat
+    </div>
+    <div class="card-body">
+        <img class="card-img" src="{{avocat[0].photo}}">
+        <h5 class="card-title">{{avocat[0].nom_avocat}}</h5>
+        <h5 class="card-title">Tel. {{avocat[0].coordonnees}}</h5>
+        <h5 class="card-title">Honoraires: {{avocat[0].honoraires}} euros par consultation</h5>
+        <h5 class="card-title">{{avocat[0].nom_avocat}}</h5>
+        <div class="card-footer">
+            <ul class="list-group">
+                <li class="list-group-item list" *ngFor="let domaine of avocat[0].Domaines">
+                    {{domaine.nom_domaine}}
+                </li>
+            </ul>
+        </div>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
