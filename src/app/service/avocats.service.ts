@@ -23,9 +23,11 @@ export class AvocatsService {
 
   }
 
-  deleteAvocat(id_avocat: any) {
+  deleteAvocat(id_avocat: number) {
 
-    return this.http.delete(`/api/avocat/${id_avocat}`);
+    return this.http.delete(`/api/avocat/${id_avocat}`).subscribe(
+      (data) => console.log(data)
+    );
 
   }
 }

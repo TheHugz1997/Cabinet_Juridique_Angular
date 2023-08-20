@@ -31,7 +31,13 @@ export class ListeavocatsComponent implements OnInit {
   deleteAvocat(id_avocat: any) {
 
     var new_id_avocat: number = +id_avocat;
-    return this.avocatsService.deleteAvocat(id_avocat);
+
+    // This part deletes the lawyer from the front html page
+    let item1 = this.avocats?.find(i => i.id_avocat === new_id_avocat);
+    this.avocats = this.avocats?.filter(obj => {return obj !== item1});
+
+    // This part deletes the lawyer from the back end
+    return this.avocatsService.deleteAvocat(new_id_avocat);
 
   }
 
