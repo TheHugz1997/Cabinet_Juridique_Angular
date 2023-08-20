@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Avocat } from '../models/Avocat';
 import { Observable } from 'rxjs';
+import { Body } from '@angular/http/src/body';
 
 @Injectable({
   providedIn: 'root'
@@ -30,4 +31,16 @@ export class AvocatsService {
     );
 
   }
+
+  addAvocat(avocat: Avocat) {
+
+    return this.http
+      .post(`/api/avocat/creation`, avocat)
+      .subscribe(
+        (data) => {
+          console.log(data)
+      }
+    );
+  }
+  
 }

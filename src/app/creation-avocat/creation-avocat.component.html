@@ -1,0 +1,22 @@
+<div class="card">
+    <form #registerForm="ngForm" (ngSubmit)="creationLawyer(registerForm.value)">
+        <h3> Veuillez compléter les champs suivants pour ajouter un avocat </h3>
+        <div class="mb-3">
+            <label for="nom_utilisateur" class="form-label">Nom de l'avocat</label>
+            <input type="text" class="form-control" id="nom_avocat" name="nom_avocat" ngModel>
+        </div>
+        <div class="mb-3">
+          <label for="mail_utilisateur" class="form-label">Coordonnées de l'avocat (Telephone)</label>
+          <input type="tel" class="form-control" id="coordonnees" name="coordonnees" ngModel>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Honoraires</label>
+          <input type="number" class="form-control" id="honoraires" name="honoraires" ngModel>
+        </div>
+        <div class="mb-3">
+            <label for="telephone" class="form-label">Url de la photo</label>
+            <input type="url" class="form-control" id="photo" name="photo" ngModel>
+        </div>
+        <button type="submit" class="btn btn-primary">Ajout</button>
+    </form>
+</div>

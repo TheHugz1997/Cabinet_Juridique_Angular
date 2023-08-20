@@ -16,6 +16,7 @@ import { RegisterComponent } from './register/register.component';
 import { DetailAvocatComponent } from './detail-avocat/detail-avocat.component';
 import { LiensComponent } from './liens/liens.component';
 import { RendezvousComponent } from './rendezvous/rendezvous.component';
+import { CreationAvocatComponent } from './creation-avocat/creation-avocat.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { RendezvousComponent } from './rendezvous/rendezvous.component';
     RegisterComponent,
     DetailAvocatComponent,
     LiensComponent,
-    RendezvousComponent
+    RendezvousComponent,
+    CreationAvocatComponent
   ],
   imports: [
     BrowserModule,

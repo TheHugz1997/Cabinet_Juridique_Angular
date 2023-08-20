@@ -3,6 +3,7 @@ import { Utilisateur } from '../models/Utilisateur';
 import { AccountService } from '../service/account.service';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -15,11 +16,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 export class LoginComponent {
 
-  constructor(private accountService: AccountService) { }
+  constructor(private accountService: AccountService, private router: Router) { }
 
   onLogin( user: {mail_utilisateur: string, mot_de_passe: string}) {
 
     this.accountService.postConnexion(user);
+
+    this.router.navigate(['']);
     
   }
 

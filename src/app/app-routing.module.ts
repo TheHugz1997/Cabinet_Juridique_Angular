@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { DetailAvocatComponent } from './detail-avocat/detail-avocat.component';
 import { RegisterComponent } from './register/register.component';
 import { LiensComponent } from './liens/liens.component';
+import { CreationAvocatComponent } from './creation-avocat/creation-avocat.component';
 
 const routes: Routes = [
   { path: '', component: AcceuilComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'details-avocat/:id_avocat', component: DetailAvocatComponent},
   { path: 'connexion', component: LoginComponent},
   { path: 'inscription', component: RegisterComponent},
-  { path: 'liens', component: LiensComponent}
+  { path: 'liens', component: LiensComponent},
+  { path: 'creationAvocat', component: CreationAvocatComponent}
 ];
 
 @NgModule({
