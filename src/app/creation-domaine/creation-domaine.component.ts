@@ -17,6 +17,8 @@ export class CreationDomaineComponent {
 
     this.domaineService.addDomaine(domaine);
 
+    this.router.navigate(['']);
+
   }
 
 }
