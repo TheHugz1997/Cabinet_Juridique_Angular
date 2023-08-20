@@ -27,7 +27,13 @@ export class DomainesComponent implements OnInit {
 
     console.log("this is id_domaine: "+id_domaine);
     var new_id_domaine: number = +id_domaine;
-    this.domainesService.deleteDomaine(new_id_domaine);
+
+    // This part deletes the legal field from the front html page
+    let item1 = this.domaines?.find(i => i.id_domaine === new_id_domaine);
+    this.domaines = this.domaines?.filter(obj => {return obj !== item1});
+
+    // This part deletes the legal field from the back end
+    return this.domainesService.deleteDomaine(new_id_domaine);
 
   }
 

@@ -29,7 +29,7 @@ export class DomainesService {
 
   deleteDomaine(id_domaine: number) {
 
-    return this.http.delete(`/api/domaine/${id_domaine}`);
+    return this.http.delete(`/api/domaine/${id_domaine}`).subscribe();
 
   }
 
