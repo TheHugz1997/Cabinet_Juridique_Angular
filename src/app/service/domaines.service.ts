@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Domaine } from '../models/Domaine';
+import { Body } from '@angular/http/src/body';
 
 
 @Injectable({
@@ -30,6 +31,16 @@ export class DomainesService {
   deleteDomaine(id_domaine: number) {
 
     return this.http.delete(`/api/domaine/${id_domaine}`).subscribe();
+
+  }
+
+  addDomaine(domaine: Domaine) {
+
+    console.log(domaine);
+    
+    return this.http.post(`/api/domaine/creation`, domaine).subscribe(
+      (data) => { console.log(data)}
+    );
 
   }
 

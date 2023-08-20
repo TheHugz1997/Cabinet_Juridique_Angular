@@ -1,0 +1,14 @@
+<div class="card">
+    <form #registerForm="ngForm" (ngSubmit)="creationLegalField(registerForm.value)">
+        <h3> Veuillez compléter les champs suivants pour ajouter un domaine juridique </h3>
+        <div class="mb-3">
+            <label for="nom_domaine" class="form-label">Nom du domaine juridique</label>
+            <input type="text" class="form-control" id="nom_domaine" name="nom_domaine" ngModel>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Description du domaine juridique</label>
+          <input type="text" class="form-control" id="description" name="description" ngModel>
+        </div>
+        <button type="submit" class="btn btn-primary">Ajout</button>
+    </form>
+</div>

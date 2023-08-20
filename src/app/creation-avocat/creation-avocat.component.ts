@@ -16,8 +16,6 @@ export class CreationAvocatComponent {
 
   creationLawyer (avocat: Avocat) {
 
-    console.log("this is avocat : "+ avocat);
-
     this.avocatsService.addAvocat(avocat);
 
     this.router.navigate(['']);

@@ -28,5 +28,11 @@ export class DetailAvocatComponent implements OnInit {
 
   }
 
+  getIdAvocat(id_avocat: any) {
+
+    localStorage.setItem('id_avocat_rendez_vous', id_avocat);
+
+  }
+
 
 }

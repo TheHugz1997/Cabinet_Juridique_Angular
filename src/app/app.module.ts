@@ -17,6 +17,7 @@ import { DetailAvocatComponent } from './detail-avocat/detail-avocat.component';
 import { LiensComponent } from './liens/liens.component';
 import { RendezvousComponent } from './rendezvous/rendezvous.component';
 import { CreationAvocatComponent } from './creation-avocat/creation-avocat.component';
+import { CreationDomaineComponent } from './creation-domaine/creation-domaine.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CreationAvocatComponent } from './creation-avocat/creation-avocat.compo
     DetailAvocatComponent,
     LiensComponent,
     RendezvousComponent,
-    CreationAvocatComponent
+    CreationAvocatComponent,
+    CreationDomaineComponent
   ],
   imports: [
     BrowserModule,

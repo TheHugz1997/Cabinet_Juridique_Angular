@@ -8,6 +8,8 @@ import { DetailAvocatComponent } from './detail-avocat/detail-avocat.component';
 import { RegisterComponent } from './register/register.component';
 import { LiensComponent } from './liens/liens.component';
 import { CreationAvocatComponent } from './creation-avocat/creation-avocat.component';
+import { CreationDomaineComponent } from './creation-domaine/creation-domaine.component';
+import { RendezvousComponent } from './rendezvous/rendezvous.component';
 
 const routes: Routes = [
   { path: '', component: AcceuilComponent},
@@ -18,7 +20,9 @@ const routes: Routes = [
   { path: 'connexion', component: LoginComponent},
   { path: 'inscription', component: RegisterComponent},
   { path: 'liens', component: LiensComponent},
-  { path: 'creationAvocat', component: CreationAvocatComponent}
+  { path: 'creationAvocat', component: CreationAvocatComponent},
+  { path: 'creationDomaine', component: CreationDomaineComponent},
+  { path: 'rendezvous', component: RendezvousComponent}
 ];
 
 @NgModule({

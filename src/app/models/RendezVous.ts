@@ -1,7 +1,7 @@
 export class RendezVous {
 
     date?: string;
-    nom_avocat?: string;
+    id_avocat?: string;
 
 }
 

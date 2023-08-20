@@ -1,1 +1,12 @@
-<p>rendezvous works!</p>
+<div class="card">
+    <form #loginForm="ngForm" (ngSubmit)="onTaking(loginForm.value)">
+        <h3> Veuillez compléter les champs suivants </h3>
+        <div class="mb-3">
+          <input class="time" type="date" id="date_day" name="date_day" min="2023-09-01" max="2030-12-31" ngModel/>
+        </div>
+        <div class="mb-3">
+            <input class= "time" type="time" id="date_time" name="date_time" ngModel/>
+        </div>
+        <button type="submit" class="btn btn-primary">Confirmer</button>
+    </form>
+</div>
